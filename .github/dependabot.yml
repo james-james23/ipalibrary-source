@@ -1,0 +1,12 @@
+# Opens a pull request when a pinned GitHub Action or Python package has a newer release.
+# Review and merge it; the tests run again on the next workflow run.
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directory: "/"
+    schedule:
+      interval: weekly
+  - package-ecosystem: pip
+    directory: "/"
+    schedule:
+      interval: weekly

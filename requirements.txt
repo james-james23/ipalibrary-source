@@ -1,0 +1,5 @@
+# Pinned so a surprise upstream release can't change what runs in CI.
+# Dependabot (see .github/dependabot.yml) opens a pull request when newer versions exist.
+requests==2.34.2
+beautifulsoup4==4.15.0
+lxml==6.1.3
